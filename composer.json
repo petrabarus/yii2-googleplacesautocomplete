@@ -1,0 +1,21 @@
+{
+    "name": "petrabarus/yii2-googleplacesautocomplete",
+    "description": "Google Places Auto Complete input widget for Yii2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petra Barus",
+            "email": "petra.barus@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PetraBarus\\Yii2\\GooglePlacesAutoComplete\\": "src/"
+        }
+    }
+}
