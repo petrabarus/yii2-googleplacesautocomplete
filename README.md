@@ -1,4 +1,4 @@
-# Yii2-GooglePlacesAutoComplete
+# yii2-googleplacesautocomplete
 Google Places Auto Complete widget for Yii2
 
 
@@ -13,6 +13,9 @@ Add below to your `composer.json` file
             "url": "https://github.com/petrabarus/yii2-googleplacesautocomplete"
         }
     ],
+    "requires": {
+        "petrabarus/yii2-googleplacesautocomplete": "*"
+    }
 ```
 
 ##Usage
