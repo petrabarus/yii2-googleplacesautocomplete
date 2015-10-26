@@ -8,11 +8,13 @@ use yii\helpers\Html;
 
 class GooglePlacesAutoComplete extends InputWidget {
 
-    const API_URL = 'http://maps.googleapis.com/maps/api/js?';
+    const API_URL = '//maps.googleapis.com/maps/api/js?';
 
     public $libraries = 'places';
 
     public $sensor = true;
+    
+    public $language = 'en-US';
 
     public $autocompleteOptions = [];
 
@@ -37,7 +39,8 @@ class GooglePlacesAutoComplete extends InputWidget {
         $view = $this->getView();
         $view->registerJsFile(self::API_URL . http_build_query([
             'libraries' => $this->libraries,
-            'sensor' => $this->sensor ? 'true' : 'false'
+            'sensor' => $this->sensor ? 'true' : 'false',
+            'language' => $this->language
         ]));
         $view->registerJs(<<<JS
 (function(){
